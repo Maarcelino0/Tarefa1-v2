@@ -1,0 +1,168 @@
+.main{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+            135deg,
+            #0f172a,
+            #1e3a8a,
+            #312e81
+    );
+
+    padding: 30px;
+}
+
+.container{
+    width: 100%;
+    max-width: 700px;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+            0 8px 32px rgba(0,0,0,0.35);
+}
+
+.titulo{
+    color: white;
+
+    text-align: center;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 10px;
+}
+
+.subtitulo{
+    color: rgba(255,255,255,0.7);
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.divInputBtn{
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.inputLista{
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    font-size: 1rem;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+}
+
+.inputLista::placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+.botaoLista{
+    padding: 15px 25px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+            135deg,
+            #3b82f6,
+            #2563eb
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.botaoLista:hover{
+    transform: translateY(-2px);
+
+    box-shadow:
+            0 8px 18px rgba(59,130,246,0.4);
+}
+
+.listaTarefas{
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.tarefa{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.1);
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+.tarefa:hover{
+    transform: translateY(-2px);
+
+    background: rgba(255,255,255,0.15);
+}
+
+.botaoRemover{
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #ef4444;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    transition: 0.2s;
+}
+
+.botaoRemover:hover{
+    background: #dc2626;
+
+    transform: scale(1.05);
+}
